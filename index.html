@@ -5,103 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Amazon Clone</title>
+    <title>Amazon</title>
 
-    <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
+    <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"
         integrity="sha512-nMJjQudb6RMMr08oY6YSfNlEWl1l8XWuoOwNvtWXrrgVs8MCR8AZBB1tEAO+ogiI93gXtG1XPmg+bAP5DochSA=="
         crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    >
+        referrerpolicy="no-referrer" />
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
 
-    <!-- ==================== NAVIGATION ==================== -->
-
+    <!-- ====================  NAVIGATION ==================== -->
     <header>
 
-        <!-- Top Navigation -->
         <div class="nav-bar">
 
-            <!-- Logo -->
             <div class="nav-logo border">
                 <div class="logo"></div>
             </div>
 
-            <!-- Address -->
             <div class="nav-address border">
-
                 <p class="address-first">Deliver to</p>
 
                 <div class="add-icon">
                     <i class="fa-solid fa-location-dot"></i>
                     <p class="address-second">India</p>
                 </div>
-
             </div>
 
-            <!-- Search -->
             <div class="nav-search">
 
-                <select class="search-select">
+                <select class="serach-select">
                     <option>All</option>
                 </select>
 
                 <input
-                    type="text"
                     placeholder="Search Amazon"
-                    class="search-input"
-                >
+                    class="search-input border">
 
                 <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-
             </div>
 
-            <!-- Sign In -->
-            <div class="nav-signin border">
-
-                <p class="signin-text">
-                    Hello, Sign in
+            <div class="nav-singin border">
+                <p>
+                    <span>Hello, Sign in</span>
                 </p>
 
-                <p class="nav-sec">
-                    Account & Lists
-                </p>
-
+                <p class="nav-sec">Account & Lists</p>
             </div>
 
-            <!-- Returns -->
             <div class="nav-return border">
-
-                <p class="return-text">
-                    Returns
+                <p>
+                    <span>Returns</span>
                 </p>
 
-                <p class="nav-sec">
-                    & Orders
-                </p>
-
+                <p class="nav-sec">&Orders</p>
             </div>
 
-            <!-- Cart -->
             <div class="nav-cart border">
-
                 <i class="fa-solid fa-cart-shopping"></i>
-                Cart
-
+                cart
             </div>
 
         </div>
 
-        <!-- Bottom Navigation -->
+
         <div class="panel">
 
             <div class="panel-all">
@@ -126,252 +99,201 @@
     </header>
 
 
-    <!-- ==================== MAIN CONTENT ==================== -->
+    <!-- ====================  MAIN CONTENT ==================== -->
+    
+    <!-- Hero section -->
+    <div class="hero-section">
 
-    <main>
+        <div class="hero-msg">
+            <p>
+                You are on amazon.com.
+                You can also shop on Amazon India for millions of products
+                with fast local delivery.
 
-        <!-- Hero Section -->
-        <section class="hero-section">
+                <a href="https://www.amazon.in">
+                    Click here to go to amazon.in
+                </a>
+            </p>
+        </div>
 
-            <div class="hero-msg">
-
-                <p>
-                    You are on amazon.com.
-                    You can also shop on Amazon India for millions
-                    of products with fast local delivery.
-
-                    <a href="https://www.amazon.in" target="_blank">
-                        Click here to go to amazon.in
-                    </a>
-                </p>
-
-            </div>
-
-        </section>
+    </div>
 
 
-        <!-- Product Section -->
-        <section class="shop-section">
+    <!-- Product shopping section -->
+    <div class="shop-section">
 
-            <!-- Product 1 -->
-            <div class="box">
-                <div class="box-content">
+        <div class="box1 box">
+            <div class="box-content">
+                <h4>Bluetooth Neckbands</h4>
 
-                    <h2>Bluetooth Neckbands</h2>
-
-                    <div
-                        class="box-img"
-                        style="background-image: url('images/1.jpg');">
-                    </div>
-
-                    <p>See more</p>
-
+                <div class="box-img"
+                    style="background-image: url('1.jpg');">
                 </div>
+
+                <p>See more</p>
             </div>
+        </div>
 
 
-            <!-- Product 2 -->
-            <div class="box">
-                <div class="box-content">
+        <div class="box2 box">
+            <div class="box-content">
+                <h4>Fire TV Stick Xbox</h4>
 
-                    <h2>Fire TV Stick Xbox</h2>
-
-                    <div
-                        class="box-img"
-                        style="background-image: url('images/2.jpg');">
-                    </div>
-
-                    <p>See more</p>
-
+                <div class="box-img"
+                    style="background-image: url('2.jpg');">
                 </div>
+
+                <p>See more</p>
             </div>
+        </div>
 
 
-            <!-- Product 3 -->
-            <div class="box">
-                <div class="box-content">
+        <div class="box3 box">
+            <div class="box-content">
+                <h4>Pen Drive</h4>
 
-                    <h2>Pen Drive</h2>
-
-                    <div
-                        class="box-img"
-                        style="background-image: url('images/3.jpg');">
-                    </div>
-
-                    <p>See more</p>
-
+                <div class="box-img"
+                    style="background-image: url('3.jpg');">
                 </div>
+
+                <p>See more</p>
             </div>
+        </div>
 
 
-            <!-- Product 4 -->
-            <div class="box">
-                <div class="box-content">
+        <div class="box4 box">
+            <div class="box-content">
+                <h4>Keyboard</h4>
 
-                    <h2>Keyboard</h2>
-
-                    <div
-                        class="box-img"
-                        style="background-image: url('images/4.jpg');">
-                    </div>
-
-                    <p>See more</p>
-
+                <div class="box-img"
+                    style="background-image: url('4.jpg');">
                 </div>
+
+                <p>See more</p>
             </div>
+        </div>
 
 
-            <!-- Product 5 -->
-            <div class="box">
-                <div class="box-content">
+        <div class="box1 box">
+            <div class="box-content">
+                <h4>External SSD</h4>
 
-                    <h2>External SSD</h2>
-
-                    <div
-                        class="box-img"
-                        style="background-image: url('images/5.jpg');">
-                    </div>
-
-                    <p>See more</p>
-
+                <div class="box-img"
+                    style="background-image: url('5.jpg');">
                 </div>
+
+                <p>See more</p>
             </div>
+        </div>
 
 
-            <!-- Product 6 -->
-            <div class="box">
-                <div class="box-content">
+        <div class="box2 box">
+            <div class="box-content">
+                <h4>Echo Dot Max with Alexa</h4>
 
-                    <h2>Echo Dot Max with Alexa</h2>
-
-                    <div
-                        class="box-img"
-                        style="background-image: url('images/6.jpg');">
-                    </div>
-
-                    <p>See more</p>
-
+                <div class="box-img"
+                    style="background-image: url('6.jpg');">
                 </div>
+
+                <p>See more</p>
             </div>
+        </div>
 
 
-            <!-- Product 7 -->
-            <div class="box">
-                <div class="box-content">
+        <div class="box3 box">
+            <div class="box-content">
+                <h4>Xiaomi Smart LED TV</h4>
 
-                    <h2>Xiaomi Smart LED TV</h2>
-
-                    <div
-                        class="box-img"
-                        style="background-image: url('images/7.jpg');">
-                    </div>
-
-                    <p>See more</p>
-
+                <div class="box-img"
+                    style="background-image: url('7.jpg');">
                 </div>
+
+                <p>See more</p>
             </div>
+        </div>
 
 
-            <!-- Product 8 -->
-            <div class="box">
-                <div class="box-content">
+        <div class="box4 box">
+            <div class="box-content">
+                <h4>OnePlus Nord Buds 3 Pro</h4>
 
-                    <h2>OnePlus Nord Buds 3 Pro</h2>
-
-                    <div
-                        class="box-img"
-                        style="background-image: url('images/8.jpg');">
-                    </div>
-
-                    <p>See more</p>
-
+                <div class="box-img"
+                    style="background-image: url('8.jpg');">
                 </div>
+
+                <p>See more</p>
             </div>
+        </div>
 
-        </section>
-
-    </main>
+    </div>
 
 
-    <!-- ==================== FOOTER ==================== -->
-
+    <!-- ====================  FOOTER ==================== -->
     <footer>
 
-        <!-- Back To Top -->
         <div class="foot-panel1">
             Back to Top
         </div>
 
-
-        <!-- Footer Links -->
         <div class="foot-panel2">
 
-            <!-- Column 1 -->
             <ul>
                 <p>Get to Know Us</p>
-                <a href="#">Careers</a>
-                <a href="#">Blog</a>
-                <a href="#">About Amazon</a>
-                <a href="#">Press Releases</a>
-                <a href="#">Amazon Science</a>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Press Releases</a>
+                <a>Amazon Science</a>
             </ul>
 
-
-            <!-- Column 2 -->
             <ul>
                 <p>Connect with Us</p>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>Instagram</a>
             </ul>
 
-
-            <!-- Column 3 -->
             <ul>
                 <p>Make Money with Us</p>
-                <a href="#">Sell on Amazon</a>
-                <a href="#">Sell under Amazon Accelerator</a>
-                <a href="#">Protect and Build Your Brand</a>
-                <a href="#">Amazon Global Selling</a>
-                <a href="#">Supply to Amazon</a>
-                <a href="#">Become an Affiliate</a>
-                <a href="#">Fulfilment by Amazon</a>
-                <a href="#">Advertise Your Products</a>
-                <a href="#">Amazon Pay on Merchants</a>
+                <a>Sell on Amazon</a>
+                <a>Sell under Amazon Accelerator</a>
+                <a>Protect and Build Your Brand</a>
+                <a>Amazon Global Selling</a>
+                <a>Supply to Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Fulfilment by Amazon</a>
+                <a>Advertise Your Products</a>
+                <a>Amazon Pay on Merchants</a>
             </ul>
 
-
-            <!-- Column 4 -->
             <ul>
                 <p>Let Us Help You</p>
-                <a href="#">Your Account</a>
-                <a href="#">Returns Centre</a>
-                <a href="#">Recalls and Product Safety Alerts</a>
-                <a href="#">100% Purchase Protection</a>
-                <a href="#">Amazon App Download</a>
-                <a href="#">Help</a>
+                <a>Your Account</a>
+                <a>Returns Centre</a>
+                <a>Recalls and Product Safety Alerts</a>
+                <a>100% Purchase Protection</a>
+                <a>Amazon App Download</a>
+                <a>Help</a>
             </ul>
 
         </div>
 
 
-        <!-- Footer Logo -->
         <div class="foot-panel3">
             <div class="logo"></div>
         </div>
 
 
-        <!-- Copyright -->
         <div class="foot-panel4">
 
             <div class="pages">
-                <a href="#">Conditions of Use & Sale</a>
-                <a href="#">Privacy Notice</a>
-                <a href="#">Interest-Based Ads</a>
+                <a>Conditions of Use & Sale</a>
+                <a>Privacy Notice</a>
+                <a>Interest-Based Ads</a>
             </div>
 
             <div class="copyright">
-                © 1996-2026, Amazon.com, Inc. or its affiliates
+                © 1996-2026, Amazon.com, Inc. or its affiliate
             </div>
 
         </div>
