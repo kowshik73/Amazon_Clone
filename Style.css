@@ -1,30 +1,28 @@
-/* =========================
-   GLOBAL / RESET
-   ========================= */
+/* =========================================================
+   GLOBAL STYLES
+========================================================= */
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-html,
 body {
-    width: 100%;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    background-color: #e2e7e6;
+}
+
+a {
+    text-decoration: none;
 }
 
 
-/* =========================
-   NAVIGATION SECTION
-   ========================= */
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 .nav-bar {
-    width: 100%;
     height: 60px;
     background-color: #0f1111;
     color: white;
@@ -34,21 +32,27 @@ body {
     justify-content: space-evenly;
 }
 
+
+/* ---------- Logo ---------- */
+
 .nav-logo {
     height: 50px;
-    width: 100px;
+    width: 110px;
+
     padding: 4px;
-    flex-shrink: 0;
 }
 
 .logo {
-    background-image: url("Amazon_logo.jpg");
+    width: 100px;
+    height: 50px;
+
+    background-image: url("images/Amazon_logo.jpg");
     background-size: cover;
     background-position: center;
-
-    height: 50px;
-    width: 100px;
 }
+
+
+/* ---------- Border Hover ---------- */
 
 .border {
     border: 1.5px solid transparent;
@@ -59,82 +63,98 @@ body {
 }
 
 
-/* Address */
+/* ---------- Address ---------- */
+
+.nav-address {
+    padding: 5px 8px;
+}
 
 .address-first {
     color: #cccccc;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     margin-left: 20px;
-}
-
-.address-second {
-    font-size: 1rem;
 }
 
 .add-icon {
     display: flex;
     align-items: center;
+    gap: 5px;
+}
+
+.address-second {
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 
-/* Search */
+/* =========================================================
+   SEARCH BAR
+========================================================= */
 
 .nav-search {
     display: flex;
+
     width: 520px;
-    max-width: 45%;
-    height: 30px;
-    border-radius: 4px;
+    height: 40px;
+
+    border-radius: 5px;
     overflow: hidden;
 }
 
 .search-select {
+    width: 55px;
+
     background-color: #f3f3f3;
-    width: 50px;
-    min-width: 50px;
-    text-align: center;
 
     border: none;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    padding: 0 5px;
+
+    text-align: center;
+    color: #333;
 }
 
 .search-input {
-    width: 100%;
-    min-width: 0;
+    flex: 1;
 
-    font-size: 0.8rem;
     border: none;
     outline: none;
+
+    padding: 0 10px;
+
+    font-size: 0.9rem;
 }
 
 .search-icon {
-    width: 45px;
-    min-width: 45px;
+    width: 50px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    font-size: 1.2rem;
-    background-color: #febd6a;
+    background-color: #febd68;
+
     color: #0f1111;
 
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    font-size: 1.2rem;
 }
 
 .nav-search:hover {
-    border: 3px solid orange;
+    outline: 3px solid #ff9900;
 }
 
 
-/* Navigation text */
+/* =========================================================
+   SIGN IN / RETURNS
+========================================================= */
 
-span {
-    display: flex;
-    font-size: 0.6rem;
-    width: 60px;
+.nav-signin,
+.nav-return {
+    padding: 6px 8px;
+}
+
+.signin-text,
+.return-text {
+    font-size: 0.7rem;
 }
 
 .nav-sec {
@@ -142,31 +162,33 @@ span {
     font-weight: 700;
 }
 
-.nav-return {
+
+/* =========================================================
+   CART
+========================================================= */
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 6px 8px;
+
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 700;
 }
-
-
-/* Cart */
 
 .nav-cart i {
     font-size: 30px;
 }
 
-.nav-cart {
-    font-size: 0.85rem;
-    font-weight: 700;
-}
 
-
-/* =========================
-   PANEL
-   ========================= */
+/* =========================================================
+   SECOND NAVIGATION PANEL
+========================================================= */
 
 .panel {
-    width: 100%;
-    height: 40px;
+    min-height: 40px;
 
     background-color: #222f3e;
     color: white;
@@ -176,33 +198,42 @@ span {
     justify-content: space-evenly;
 }
 
+.panel-all {
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.panel-all i {
+    margin-right: 5px;
+}
+
 .panel-options {
     width: 70%;
-    display: flex;
-    align-items: center;
 }
 
 .panel-options p {
-    display: inline;
-    margin-left: 10px;
+    display: inline-block;
+
+    margin-left: 15px;
+
     font-size: 0.8rem;
 }
 
 .panel-deals {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
 }
 
 
-/* =========================
-   SHOP / HERO SECTION
-   ========================= */
+/* =========================================================
+   HERO SECTION
+========================================================= */
 
 .hero-section {
-    width: 100%;
     height: 250px;
 
-    background-image: url("0.jpg");
+    background-image: url("images/0.jpg");
     background-size: cover;
     background-position: center;
 
@@ -213,98 +244,100 @@ span {
 
 .hero-msg {
     width: 80%;
-    height: 30px;
+    min-height: 30px;
 
     margin-bottom: 25px;
+    padding: 7px 15px;
 
-    color: #0f1111;
     background-color: white;
+    color: #0f1111;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     font-size: 0.7rem;
+    text-align: center;
 }
 
 .hero-msg a {
     color: #007185;
+    margin-left: 5px;
 }
 
 
-/* =========================
+/* =========================================================
    SHOP SECTION
-   ========================= */
+========================================================= */
 
 .shop-section {
-    width: 100%;
-
     display: flex;
     flex-wrap: wrap;
+
     justify-content: space-evenly;
-    align-items: flex-start;
+
+    padding: 5px 0 20px;
 
     background-color: #e2e7e6;
-
-    padding-bottom: 15px;
 }
 
 
-/* Product box */
+/* ---------- Product Box ---------- */
 
 .box {
     width: 23%;
-    height: 250px;
+    min-height: 330px;
 
-    background-color: white;
-
-    padding: 15px 0;
     margin-top: 15px;
 
-    flex-shrink: 0;
+    padding: 15px 0;
+
+    background-color: white;
 }
-
-
-/* Product image */
-
-.box-img {
-    width: 100%;
-    height: 200px;
-
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-
-    padding: 0 3px;
-}
-
-
-/* Product content */
 
 .box-content {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0 1rem;
 }
 
 .box-content h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #0f1111;
 }
+
+
+/* ---------- Product Image ---------- */
+
+.box-img {
+    width: 100%;
+    height: 230px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* ---------- See More ---------- */
 
 .box-content p {
     color: #007185;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.box-content p:hover {
+    color: #c7511f;
 }
 
 
-/* =========================
-   FOOTER SECTION
-   ========================= */
+/* =========================================================
+   FOOTER
+========================================================= */
 
 .foot-panel1 {
-    width: 100%;
     height: 50px;
 
     background-color: #37475a;
@@ -315,51 +348,69 @@ span {
     align-items: center;
 
     font-size: 0.85rem;
+
+    cursor: pointer;
+}
+
+.foot-panel1:hover {
+    background-color: #485769;
 }
 
 
-/* Footer panel 2 */
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
 
 .foot-panel2 {
-    width: 100%;
     min-height: 300px;
+
+    padding: 30px 5%;
 
     background-color: #222f3d;
     color: white;
 
     display: flex;
     justify-content: space-evenly;
+    gap: 30px;
 }
 
-ul {
-    margin-top: 20px;
+.foot-panel2 ul {
+    width: 20%;
+    list-style: none;
 }
 
-ul p {
-    font-size: 0.8rem;
-    font-weight: 600;
+.foot-panel2 ul p {
+    margin-bottom: 15px;
+
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
-ul a {
-    display: flex;
+.foot-panel2 ul a {
+    display: block;
 
-    font-size: 0.7rem;
     margin-top: 10px;
 
     color: #dddddd;
+
+    font-size: 0.75rem;
+}
+
+.foot-panel2 ul a:hover {
+    text-decoration: underline;
 }
 
 
-/* Footer panel 3 */
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
 
 .foot-panel3 {
-    width: 100%;
     height: 70px;
 
     background-color: #222f3d;
-    color: white;
 
-    border-top: 0.5px solid white;
+    border-top: 0.5px solid #777;
 
     display: flex;
     justify-content: center;
@@ -367,98 +418,93 @@ ul a {
 }
 
 
-/* Footer logo */
-
-.foot-panel3 .logo {
-    background-image: url("Amazon_logo.jpg");
-    background-size: cover;
-    background-position: center;
-
-    height: 50px;
-    width: 100px;
-}
-
-
-/* Footer panel 4 */
+/* =========================================================
+   COPYRIGHT
+========================================================= */
 
 .foot-panel4 {
-    width: 100%;
-    height: 80px;
+    min-height: 80px;
+
+    padding: 20px;
 
     background-color: #0f1111;
     color: white;
 
-    font-size: 0.7rem;
     text-align: center;
+
+    font-size: 0.7rem;
 }
 
 .pages {
-    padding-top: 25px;
+    margin-bottom: 8px;
+}
+
+.pages a {
+    color: white;
+    margin: 0 10px;
+}
+
+.pages a:hover {
+    text-decoration: underline;
 }
 
 .copyright {
-    padding-top: 5px;
+    color: #dddddd;
 }
 
 
-/* =========================
+/* =========================================================
    RESPONSIVE DESIGN
-   ========================= */
+========================================================= */
 
-
-/* Tablets */
-
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
     .nav-search {
-        width: 400px;
-        max-width: 40%;
+        width: 350px;
+    }
+
+    .panel-options {
+        width: 60%;
     }
 
     .box {
         width: 45%;
     }
-
 }
 
 
-/* Mobile */
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .nav-bar {
         height: auto;
-        min-height: 60px;
+        padding: 8px;
         flex-wrap: wrap;
-        padding: 5px;
-        gap: 5px;
+        gap: 8px;
     }
 
     .nav-search {
         order: 5;
-        width: 95%;
-        max-width: 95%;
-        margin: 5px auto;
+        width: 100%;
     }
 
-    .address-first {
-        margin-left: 5px;
+    .nav-address,
+    .nav-signin,
+    .nav-return {
+        display: none;
     }
 
     .panel {
-        height: auto;
-        min-height: 40px;
-        padding: 8px 5px;
+        flex-wrap: wrap;
+        padding: 5px;
     }
 
     .panel-options {
         width: 100%;
-        flex-wrap: wrap;
+        text-align: center;
     }
 
     .panel-options p {
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 5px;
     }
 
     .panel-deals {
@@ -470,33 +516,21 @@ ul a {
     }
 
     .hero-msg {
-        width: 90%;
+        width: 95%;
         font-size: 0.65rem;
     }
 
     .box {
-        width: 46%;
-        height: 250px;
-    }
-
-    .box-img {
-        height: 190px;
-    }
-
-    .foot-panel2 {
-        flex-wrap: wrap;
-        height: auto;
-        padding-bottom: 20px;
-    }
-}
-
-
-/* Very small screens */
-
-@media (max-width: 400px) {
-
-    .box {
         width: 90%;
     }
 
+    .foot-panel2 {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .foot-panel2 ul {
+        width: 100%;
+    }
 }
+
