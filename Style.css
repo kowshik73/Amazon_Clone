@@ -177,31 +177,33 @@ span {
 }
 
 .box {
-    height: 300px;       /* smaller container */
+    height: 300px;
     width: 23%;
-    min-width: 220px;
     background-color: white;
-    padding: 10px 0;
+    padding: 15px 10px;
     box-sizing: border-box;
 }
 
 .box-img {
-    height: 230px;       /* larger image area */
+    height: 200px;
+    width: 100%;
     background-size: contain;
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
-    margin: 5px;
+    margin: 0;
 }
 
 .box-content {
     margin: 0 10px;
 }
 
-.box-content h2 {
-    font-size: 0.9rem;
-    margin: 5px 0;
+.box-content h4 {
+    height: 30px;          /* same space for every heading */
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
 }
-
 .box-content p {
     color: #007185;
     font-size: 0.7rem;
