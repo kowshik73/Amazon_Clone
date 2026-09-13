@@ -188,7 +188,7 @@ span {
 .box-img {
     height: 230px;       /* larger image area */
     background-size: contain;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     margin: 5px;
 }
