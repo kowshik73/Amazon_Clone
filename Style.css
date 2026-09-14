@@ -197,7 +197,6 @@ span {
 }
 
 .box-content h3 {
-    font-size: 2rem;
     margin: 5px 0;
 }
 
@@ -227,10 +226,6 @@ span {
 
     .box-img {
         height: 210px;
-    }
-
-    .box-content h3 {
-        font-size: 1rem;
     }
 
     .box-content p {
