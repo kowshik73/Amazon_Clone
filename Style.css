@@ -233,7 +233,7 @@ span {
         font-size: 1rem;
     }
 
-    .box-content p {
+    .box-content p pre{
         font-size: 0.8rem;
     }
 }
