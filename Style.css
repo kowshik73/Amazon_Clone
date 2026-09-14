@@ -196,20 +196,25 @@ span {
     margin: 0 10px;
 }
 
-.box-content h3 {
+.box-content h2 {
     font-size: 0.9rem;
     margin: 5px 0;
 }
 
+.box-content p {
+    color: #007185;
+    font-size: 0.7rem;
+    margin: 5px 0;
+}
 
-/* Tablet */
+
 @media (max-width: 900px) {
     .shop-section {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
     .shop-section {
         grid-template-columns: 1fr;
@@ -228,8 +233,8 @@ span {
         font-size: 1rem;
     }
 
-    .box-content p pre{
-        font-size: 0.7rem;
+    .box-content p {
+        font-size: 0.8rem;
     }
 }
 
@@ -302,6 +307,7 @@ ul a {
 .copyright {
     padding-top: 5px;
 }
+
 
 
 
