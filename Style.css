@@ -196,12 +196,12 @@ span {
     margin: 0 10px;
 }
 
-.box-content h2 {
+.box-content h4 {
     font-size: 0.9rem;
     margin: 5px 0;
 }
 
-.box-content p {
+.box-content p pre{
     color: #007185;
     font-size: 0.7rem;
     margin: 5px 0;
