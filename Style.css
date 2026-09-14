@@ -196,15 +196,15 @@ span {
     margin: 0 10px;
 }
 
-.box-content h2 {
+.box-content h3 {
     font-size: 0.9rem;
     margin: 5px 0;
 }
 
 .box-content p {
     color: #007185;
-    font-size: 0.7rem;
-    margin: 5px 0;
+    font-size: 0.5rem;
+    margin: 7px 0;
 }
 
 
