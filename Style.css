@@ -205,12 +205,18 @@ span {
     margin: 5px 0;
 }
 
-.box-content p a{
+.box-content p {
     color: #007185;
-    font-size: 0.7rem;
-    line-height: 1.4;
-    margin: 5px 0;
+    font-size: 0.9rem;
+    margin: 8px 0;
+    cursor: pointer;
 }
+
+.box-content p:hover {
+    color: #c7511f;
+    text-decoration: underline;
+}
+
 
 
 /* =========================
