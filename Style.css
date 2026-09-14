@@ -203,8 +203,8 @@ span {
 
 .box-content p {
     color: #007185;
-    font-size: 0.5rem;
-    margin: 7px 0;
+    font-size: 0.7rem;
+    margin: 5px 0;
 }
 
 
@@ -229,7 +229,7 @@ span {
         height: 210px;
     }
 
-    .box-content h4 {
+    .box-content h3 {
         font-size: 1rem;
     }
 
