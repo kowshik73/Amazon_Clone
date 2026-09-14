@@ -205,7 +205,7 @@ span {
     margin: 5px 0;
 }
 
-.box-content p {
+.box-content p a{
     color: #007185;
     font-size: 0.9rem;
     margin: 8px 0;
