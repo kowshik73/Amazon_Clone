@@ -186,7 +186,8 @@ span {
 }
 
 .box-img {
-    height: 230px;       /* larger image area */
+    height: 230px;
+    width: 330px; /* larger image area */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -197,7 +198,7 @@ span {
     margin: 0 10px;
 }
 
-.box-content h2 {
+.box-content h4 {
     font-size: 0.9rem;
     margin: 5px 0;
 }
