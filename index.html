@@ -5,90 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Amazon</title>
+    <title>Amazon Clone</title>
 
-    <link rel="stylesheet"
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"
         integrity="sha512-nMJjQudb6RMMr08oY6YSfNlEWl1l8XWuoOwNvtWXrrgVs8MCR8AZBB1tEAO+ogiI93gXtG1XPmg+bAP5DochSA=="
         crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
+        referrerpolicy="no-referrer"
+    >
 
+    <!-- CSS -->
     <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
 
-    <!-- ====================  NAVIGATION ==================== -->
+    <!-- ================= NAVIGATION ================= -->
+
     <header>
 
+        <!-- Top Navigation -->
         <div class="nav-bar">
 
+            <!-- Logo -->
             <div class="nav-logo border">
                 <div class="logo"></div>
             </div>
 
+            <!-- Address -->
             <div class="nav-address border">
+
                 <p class="address-first">Deliver to</p>
 
                 <div class="add-icon">
                     <i class="fa-solid fa-location-dot"></i>
                     <p class="address-second">India</p>
                 </div>
+
             </div>
 
+            <!-- Search -->
             <div class="nav-search">
 
-                <select class="serach-select">
+                <select class="search-select">
                     <option>All</option>
+                    <option>Electronics</option>
+                    <option>Books</option>
+                    <option>Fashion</option>
                 </select>
 
                 <input
+                    type="text"
                     placeholder="Search Amazon"
-                    class="search-input border">
+                    class="search-input"
+                >
 
-                <div class="search-icon">
+                <button class="search-icon" aria-label="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                </button>
+
             </div>
 
-            <div class="nav-singin border">
-                <p>
-                    <span>Hello, Sign in</span>
-                </p>
+            <!-- Sign In -->
+            <div class="nav-signin border">
 
+                <p class="small-text">Hello, Sign in</p>
                 <p class="nav-sec">Account & Lists</p>
+
             </div>
 
+            <!-- Returns -->
             <div class="nav-return border">
-                <p>
-                    <span>Returns</span>
-                </p>
 
-                <p class="nav-sec">&Orders</p>
+                <p class="small-text">Returns</p>
+                <p class="nav-sec">& Orders</p>
+
             </div>
 
+            <!-- Cart -->
             <div class="nav-cart border">
+
                 <i class="fa-solid fa-cart-shopping"></i>
-                cart
+                <span>Cart</span>
+
             </div>
 
         </div>
 
 
+        <!-- Secondary Navigation -->
         <div class="panel">
 
             <div class="panel-all">
                 <i class="fa-solid fa-bars"></i>
-                All
+                <span>All</span>
             </div>
 
-            <div class="panel-options">
-                <p>Today's Deals</p>
-                <p>Customer Service</p>
-                <p>Registry</p>
-                <p>Gift Cards</p>
-                <p>Sell</p>
-            </div>
+            <nav class="panel-options">
+                <a href="#">Today's Deals</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Registry</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Sell</a>
+            </nav>
 
             <div class="panel-deals">
                 Shop deals in Electronics
@@ -99,201 +120,262 @@
     </header>
 
 
-    <!-- ====================  MAIN CONTENT ==================== -->
-    
-    <!-- Hero section -->
-    <div class="hero-section">
+    <!-- ================= HERO SECTION ================= -->
 
-        <div class="hero-msg">
-            <p>
-                You are on amazon.com.
-                You can also shop on Amazon India for millions of products
-                with fast local delivery.
+    <main>
 
-                <a href="https://www.amazon.in">
-                    Click here to go to amazon.in
-                </a>
-            </p>
-        </div>
+        <section class="hero-section">
 
-    </div>
+            <div class="hero-msg">
 
+                <p>
+                    You are on amazon.com.
+                    You can also shop on Amazon India for millions of products
+                    with fast local delivery.
 
-    <!-- Product shopping section -->
-    <div class="shop-section">
+                    <a href="https://www.amazon.in" target="_blank">
+                        Click here to go to amazon.in
+                    </a>
+                </p>
 
-        <div class="box1 box">
-            <div class="box-content">
-                <h4><pre>   Bluetooth Neckband</pre></h4>
-
-                <div class="box-img"
-                    style="background-image: url('1.jpg');">
-                </div>
-
-                <p>See more</p>
             </div>
-        </div>
+
+        </section>
 
 
-        <div class="box2 box">
-            <div class="box-content">
-                <h4><pre>   Fire TV Stick Xbox</pre></h4>
+        <!-- ================= PRODUCT SECTION ================= -->
 
-                <div class="box-img"
-                    style="background-image: url('2.jpg');">
+        <section class="shop-section">
+
+            <!-- Product 1 -->
+            <article class="box">
+                <div class="box-content">
+
+                    <h2>Bluetooth Neckband</h2>
+
+                    <div
+                        class="box-img"
+                        style="background-image: url('1.jpg');">
+                    </div>
+
+                    <a href="#">See more</a>
+
                 </div>
-
-                <p>See more</p>
-            </div>
-        </div>
+            </article>
 
 
-        <div class="box3 box">
-            <div class="box-content">
-                <h4><pre>   Pen Drive</pre></h4>
+            <!-- Product 2 -->
+            <article class="box">
+                <div class="box-content">
 
-                <div class="box-img"
-                    style="background-image: url('3.jpg');">
+                    <h2>Fire TV Stick Xbox</h2>
+
+                    <div
+                        class="box-img"
+                        style="background-image: url('2.jpg');">
+                    </div>
+
+                    <a href="#">See more</a>
+
                 </div>
-
-                <p>See more</p>
-            </div>
-        </div>
+            </article>
 
 
-        <div class="box4 box">
-            <div class="box-content">
-                <h4><pre>   Keyboard</pre></h4>
+            <!-- Product 3 -->
+            <article class="box">
+                <div class="box-content">
 
-                <div class="box-img"
-                    style="background-image: url('4.jpg');">
+                    <h2>Pen Drive</h2>
+
+                    <div
+                        class="box-img"
+                        style="background-image: url('3.jpg');">
+                    </div>
+
+                    <a href="#">See more</a>
+
                 </div>
-
-                <p>See more</p>
-            </div>
-        </div>
+            </article>
 
 
-        <div class="box1 box">
-            <div class="box-content">
-                <h4><pre>   External SSD</pre></h4>
+            <!-- Product 4 -->
+            <article class="box">
+                <div class="box-content">
 
-                <div class="box-img"
-                    style="background-image: url('5.jpg');">
+                    <h2>Keyboard</h2>
+
+                    <div
+                        class="box-img"
+                        style="background-image: url('4.jpg');">
+                    </div>
+
+                    <a href="#">See more</a>
+
                 </div>
-
-                <p>See more</p>
-            </div>
-        </div>
+            </article>
 
 
-        <div class="box2 box">
-            <div class="box-content">
-                <h4><pre>   Echo Dot Max with Alexa</pre></h4>
+            <!-- Product 5 -->
+            <article class="box">
+                <div class="box-content">
 
-                <div class="box-img"
-                    style="background-image: url('6.jpg');">
+                    <h2>External SSD</h2>
+
+                    <div
+                        class="box-img"
+                        style="background-image: url('5.jpg');">
+                    </div>
+
+                    <a href="#">See more</a>
+
                 </div>
-
-                <p>See more</p>
-            </div>
-        </div>
+            </article>
 
 
-        <div class="box3 box">
-            <div class="box-content">
-                <h4><pre>   Xiaomi Smart LED TV</pre></h4>
+            <!-- Product 6 -->
+            <article class="box">
+                <div class="box-content">
 
-                <div class="box-img"
-                    style="background-image: url('7.jpg');">
+                    <h2>Echo Dot Max with Alexa</h2>
+
+                    <div
+                        class="box-img"
+                        style="background-image: url('6.jpg');">
+                    </div>
+
+                    <a href="#">See more</a>
+
                 </div>
-
-                <p>See more</p>
-            </div>
-        </div>
+            </article>
 
 
-        <div class="box4 box">
-            <div class="box-content">
-                <h4><pre>   OnePlus Nord Buds 3 Pro</pre></h4>
+            <!-- Product 7 -->
+            <article class="box">
+                <div class="box-content">
 
-                <div class="box-img"
-                    style="background-image: url('8.jpg');">
+                    <h2>Xiaomi Smart LED TV</h2>
+
+                    <div
+                        class="box-img"
+                        style="background-image: url('7.jpg');">
+                    </div>
+
+                    <a href="#">See more</a>
+
                 </div>
-
-                <p>See more</p>
-            </div>
-        </div>
-
-    </div>
+            </article>
 
 
-    <!-- ====================  FOOTER ==================== -->
+            <!-- Product 8 -->
+            <article class="box">
+                <div class="box-content">
+
+                    <h2>OnePlus Nord Buds 3 Pro</h2>
+
+                    <div
+                        class="box-img"
+                        style="background-image: url('8.jpg');">
+                    </div>
+
+                    <a href="#">See more</a>
+
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
+        <!-- Back To Top -->
         <div class="foot-panel1">
             Back to Top
         </div>
 
+
+        <!-- Footer Links -->
         <div class="foot-panel2">
 
-            <ul>
-                <p>Get to Know Us</p>
-                <a>Careers</a>
-                <a>Blog</a>
-                <a>About Amazon</a>
-                <a>Press Releases</a>
-                <a>Amazon Science</a>
-            </ul>
+            <div class="footer-column">
 
-            <ul>
-                <p>Connect with Us</p>
-                <a>Facebook</a>
-                <a>Twitter</a>
-                <a>Instagram</a>
-            </ul>
+                <h3>Get to Know Us</h3>
 
-            <ul>
-                <p>Make Money with Us</p>
-                <a>Sell on Amazon</a>
-                <a>Sell under Amazon Accelerator</a>
-                <a>Protect and Build Your Brand</a>
-                <a>Amazon Global Selling</a>
-                <a>Supply to Amazon</a>
-                <a>Become an Affiliate</a>
-                <a>Fulfilment by Amazon</a>
-                <a>Advertise Your Products</a>
-                <a>Amazon Pay on Merchants</a>
-            </ul>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Amazon Science</a>
 
-            <ul>
-                <p>Let Us Help You</p>
-                <a>Your Account</a>
-                <a>Returns Centre</a>
-                <a>Recalls and Product Safety Alerts</a>
-                <a>100% Purchase Protection</a>
-                <a>Amazon App Download</a>
-                <a>Help</a>
-            </ul>
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Connect with Us</h3>
+
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Make Money with Us</h3>
+
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Sell under Amazon Accelerator</a>
+                <a href="#">Protect and Build Your Brand</a>
+                <a href="#">Amazon Global Selling</a>
+                <a href="#">Supply to Amazon</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Fulfilment by Amazon</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Amazon Pay on Merchants</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Let Us Help You</h3>
+
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">Recalls and Product Safety Alerts</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Amazon App Download</a>
+                <a href="#">Help</a>
+
+            </div>
 
         </div>
 
 
+        <!-- Footer Logo -->
         <div class="foot-panel3">
+
             <div class="logo"></div>
+
         </div>
 
 
+        <!-- Copyright -->
         <div class="foot-panel4">
 
             <div class="pages">
-                <a>Conditions of Use & Sale</a>
-                <a>Privacy Notice</a>
-                <a>Interest-Based Ads</a>
+                <a href="#">Conditions of Use & Sale</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Interest-Based Ads</a>
             </div>
 
             <div class="copyright">
-                © 1996-2026, Amazon.com, Inc. or its affiliate
+                © 1996-2026, Amazon.com, Inc. or its affiliates
             </div>
 
         </div>
@@ -302,7 +384,6 @@
 
 </body>
 </html>
-
 
 
 
